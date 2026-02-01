@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* SceneSense AI - Cinematic Design System
+   Palette: #e8d6cb, #d0ada7, #ad6a6c, #5d2e46, #b58db6
+   All colors in HSL format
+*/
+
+@layer base {
+  :root {
+    /* Core backgrounds - dark cinematic */
+    --background: 0 0% 8%;
+    --foreground: 30 20% 90%;
+
+    /* Cards & surfaces */
+    --card: 0 0% 11%;
+    --card-foreground: 30 20% 90%;
+
+    --popover: 0 0% 13%;
+    --popover-foreground: 30 20% 90%;
+
+    /* Primary - Deep Plum #5d2e46 */
+    --primary: 325 35% 27%;
+    --primary-foreground: 30 20% 92%;
+
+    /* Secondary - Warm Cream #e8d6cb */
+    --secondary: 28 35% 85%;
+    --secondary-foreground: 325 35% 20%;
+
+    /* Muted - Dusty Rose #d0ada7 */
+    --muted: 0 0% 15%;
+    --muted-foreground: 10 20% 65%;
+
+    /* Accent - Terracotta #ad6a6c */
+    --accent: 358 30% 55%;
+    --accent-foreground: 30 20% 95%;
+
+    /* Mauve highlight #b58db6 */
+    --mauve: 299 24% 63%;
+    --mauve-foreground: 0 0% 10%;
+
+    /* Warm cream for highlights */
+    --cream: 28 35% 85%;
+    --cream-foreground: 0 0% 10%;
+
+    /* Dusty rose */
+    --dusty: 10 25% 74%;
+    --dusty-foreground: 0 0% 10%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 30 20% 95%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 15%;
+    --ring: 358 30% 55%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 9%;
+    --sidebar-foreground: 30 20% 80%;
+    --sidebar-primary: 358 30% 55%;
+    --sidebar-primary-foreground: 30 20% 95%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 30 20% 85%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 358 30% 55%;
+
+    /* Film grain overlay */
+    --grain-opacity: 0.03;
+
+    /* Typography */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Film grain texture overlay */
+@layer utilities {
+  .film-grain {
+    position: relative;
+  }
+  
+  .film-grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: var(--grain-opacity);
+    pointer-events: none;
+    z-index: 50;
+  }
+
+  .text-gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--dusty)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-glow {
+    box-shadow: 0 0 20px -5px hsl(var(--accent) / 0.3);
+  }
+
+  .scene-panel {
+    background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(0 0% 9%) 100%);
+    border: 1px solid hsl(var(--border));
+  }
+}
