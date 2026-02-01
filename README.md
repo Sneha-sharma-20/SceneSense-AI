@@ -47,9 +47,34 @@ Each shot is accompanied by professional justification and compiled into a produ
 ## Key Highlights
 
 - Converts scripts into director-style cinematic planning  
-- Supports emotional analysis and character point-of-view control  
+- Supports emotional analysis and character point-of-view control
 - Generates storyboard-ready visual guidance  
 - Produces production-ready shot lists  
 - Designed to resemble real-world filmmaking tools  
 
 ---
+## Workflow
+ <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d76be597-7c40-48a7-b328-c0495f7caecb" />
+
+
+## Outputs
+
+Chat Interface ![WhatsApp Image 2026-02-01 at 9 19 57 AM](https://github.com/user-attachments/assets/24390705-8f2d-4b99-9e77-e75270c34897)
+
+
+Director Notes ![WhatsApp Image 2026-02-01 at 9 20 48 AM](https://github.com/user-attachments/assets/2802d767-abb2-42eb-91da-55710fbf81fb)
+
+
+Creative parameters ![WhatsApp Image 2026-02-01 at 9 26 24 AM](https://github.com/user-attachments/assets/d6d3d370-487d-442d-89a9-8641e7a4aa80)
+
+Storyboard ![WhatsApp Image 2026-02-01 at 9 22 48 AM](https://github.com/user-attachments/assets/5f49710a-597b-43d8-90ca-5c9a3a9a3471)
+
+
+
+
+
+
+
+
+
+
