@@ -53,6 +53,7 @@ Each shot is accompanied by professional justification and compiled into a produ
 - Designed to resemble real-world filmmaking tools  
 
 ---
+https://scenesenseai.vercel.app/ **Demo**
 ## Workflow
  <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/d76be597-7c40-48a7-b328-c0495f7caecb" />
 
